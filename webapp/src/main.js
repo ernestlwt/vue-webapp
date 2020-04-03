@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import App from './App'
-import HelloWorld from './components/HelloWorld'
+import Homepage from './components/Homepage'
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
@@ -17,7 +17,7 @@ const Bar = { template: '<div>bar</div>' }
 
 const router = new VueRouter({
   routes: [
-    { path:'/', component: HelloWorld},
+    { path:'/', component: Homepage},
     { path: '/foo', component: Foo },
     { path: '/bar', component: Bar }
   ]
@@ -25,5 +25,8 @@ const router = new VueRouter({
 
 new Vue({
   router: router,
-  render: h => h(App)
+  render: h => h(App),
+  data: {
+    title: 'Welcome!'
+  }
 }).$mount('#app')
