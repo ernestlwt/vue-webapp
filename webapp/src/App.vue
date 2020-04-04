@@ -22,24 +22,18 @@ export default {
 }
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
-#app {
-  font-family: 'Raleway', sans-serif;
-  color: #2c3e50;
-  background-color: 
-}
+<style lang="scss">
 
 #header {
-  height: 58px;
+  height: $header_height;
 }
 
 #main-content {
-  min-height: calc(100vh - 58px - 56px); /* screen height - header - footer */
+  min-height: $page_min_height;
 }
 
 #footer {
-  height: 56px;
+  height: $footer_height;
 }
 
 </style>
