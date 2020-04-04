@@ -1,11 +1,14 @@
 <template>
-  <div>
-    <h3>{{ experience.company }}</h3>
-    <h6>{{ experience.position }}, {{ experience.period }}</h6>
-    <ul>
-      <li v-for="task in experience.tasks" :key="task"><span class="fa-li"><i class="fas fa-check-square"></i></span>{{ task }}</li>
-    </ul>
-  </div>
+  <b-row class="py-3">
+    <b-col>
+      <h3 class="ecard_title">{{ experience.company }}</h3>
+      <h6 class="ecard_subtitle py-3">{{ experience.position }}</h6>
+      <p class="ecard_desc">{{ experience.description }}</p>
+    </b-col>
+    <b-col class="text-right" md="3">
+      <h6 class="ecard_subtitle py-3">{{ experience.period }}</h6>
+    </b-col>
+  </b-row>
 </template>
 
 <script>
@@ -14,3 +17,19 @@
     props: ["experience"]
   }
 </script>
+
+<style lang="scss" scoped>
+
+.ecard_title {
+  color: #595959;
+}
+
+.ecard_subtitle {
+  color: #999999;
+}
+
+.ecard_desc {
+  color: #595959;
+}
+
+</style>

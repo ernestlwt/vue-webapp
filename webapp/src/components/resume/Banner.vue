@@ -1,7 +1,7 @@
 <template>
-  <b-container fluid class="banner_section d-flex">
-    <b-container class="banner_section d-flex">
-      <b-row class="banner_row justify-content-sm-center">
+  <b-container fluid class="banner_section py-5">
+    <b-container>
+      <b-row class="justify-content-sm-center">
         <b-col sm="auto" align="center" align-self="center">
           <img class="avatar_img" src="/avatar.png" alt="avatar"/>
         </b-col>
@@ -33,10 +33,8 @@ export default {
   background-color: #1abc9c;
   color: white;
   min-height: 50vh;
-}
-
-.banner_row {
-  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .avatar_img {
