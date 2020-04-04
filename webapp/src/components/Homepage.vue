@@ -1,7 +1,6 @@
 <template>
   <div>
     <Banner />
-    <About />
     <Experience />
   </div>
 </template>
