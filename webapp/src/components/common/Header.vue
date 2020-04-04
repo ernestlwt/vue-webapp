@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <b-navbar class="header-bar" toggleable="lg" type="dark" variant="dark">
+    <b-navbar class="header-bar" toggleable="lg" type="dark" variant="dark" fixed="top">
       <b-container>
         <b-navbar-brand href="/"><h5>HOME</h5></b-navbar-brand>
 

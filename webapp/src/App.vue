@@ -27,48 +27,19 @@ export default {
 #app {
   font-family: 'Raleway', sans-serif;
   color: #2c3e50;
-  font-size: 1.5em;
+  background-color: 
 }
-
-h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 2.25em;
-}
-
-h4 {
-  font-size: 2em;
-}
-
-h5 {
-  font-size: 1.75em;
-}
-
-h6 {
-  font-size: 1.25em;
-}
-
-p {
-  font-size: 1em;
-}
-
 
 #header {
-  height: 76px;
+  height: 58px;
 }
 
 #main-content {
-  min-height: calc(100vh - 76px - 68px); /* screen height - header - footer */
+  min-height: calc(100vh - 58px - 56px); /* screen height - header - footer */
 }
 
 #footer {
-  height: 68px;
+  height: 56px;
 }
 
 </style>
